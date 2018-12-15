@@ -49,7 +49,6 @@ body {
 /* Title section */
 .titleSection {
   position: relative;
-  height: 504px;
   background: rgba(255, 255, 255, 1);
   background: -moz-linear-gradient(
     top,
@@ -91,6 +90,12 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c9c9d1', GradientType=0 );
 }
 
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  height: 504px;
+}
+
 .titleArticle {
   position: relative;
   display: flex;
@@ -98,8 +103,13 @@ body {
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
-  width: 90%;
   height: 100%;
+}
+
+.arrow {
+  color: #24ba9f;
+  font-size: 78px;
+  font-weight: 300;
 }
 
 .img-wrapper {
