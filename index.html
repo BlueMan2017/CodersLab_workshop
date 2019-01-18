@@ -1,54 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sit on our chair</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,500,700"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet" />
+</head>
+
+<body>
     <header class="header">
-      <nav class="container navbar">
-        <span class="navbar__logo">Sit on chair</span>
-        <ul class="navbar__content">
-          <li class="navbar__item">O firmie</li>
-          <li class="navbar__item">Galeria</li>
-          <li class="navbar__item">Kontakt</li>
-        </ul>
-      </nav>
+        <nav class="container navbar">
+            <div class="navbar__logo">Sit <span><b>ON</b></span> chair</div>
+            <ul class="navbar__content">
+                <li class="navbar__item">O firmie</li>
+                <li class="navbar__item">Galeria</li>
+                <li class="navbar__item">Kontakt</li>
+            </ul>
+        </nav>
     </header>
     <section class="titleSection">
-      <div class="container title-wrapper">
-        <div class="arrow">&#60;</div>
-        <article class="titleArticle">
-          <div class="img-wrapper">
-            <img
-              class="titleArticle__image"
-              src="./images/black_chair.png"
-              width="600px"
-              alt="black chair"
-            />
-          </div>
-          <div class="titleArticle__content">
-            <h2>
-              Sit <span class="logoBold">on</span> our
-              <span class="logoBold">chair</span>
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Senectus et netus et malesuada fames ac turpis egestas integer.
-            </p>
-            <button class="titleArticle__button">Zobacz więcej</button>
-          </div>
-        </article>
-        <div class="arrow">&#62;</div>
-      </div>
+        <div class="container title-wrapper">
+            <div class="arrow">&#60;</div>
+            <article class="titleArticle">
+                <div class="img-wrapper">
+                    <img class="titleArticle__image" src="./images/black_chair.png" width="600px" alt="black chair" />
+                </div>
+                <div class="titleArticle__content">
+                    <h2>
+                        Sit <span class="logoBold">on</span> our
+                        <span class="logoBold">chair</span>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis egestas integer.
+                    </p>
+                    <button class="titleArticle__button">Zobacz więcej</button>
+                </div>
+            </article>
+            <div class="arrow">&#62;</div>
+        </div>
     </section>
-  </body>
+    <section class="container pictures">
+        <div class="pictures__item picture1">
+            <div class="transparentBox">
+                <div class="underlineTitle">Chair CLAIR</div>
+            </div>
+        </div>
+        <div class="pictures__item picture2">
+            <div class="transparentBox">
+                <div class="underlineTitle">Chair MARGARITA</div>
+            </div>
+        </div>
+        <div class="pictures__textbox">
+            <div class="underlineTitle">Finds all inputs</div>
+            <p>Finds all inputs that are not checked and highlight the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked</p>
+            <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+        </div>
+    </section>
+    <section class="prices">
+        <div class="container">
+            <div class="prices__title">CENNIK</div>
+            <div class="prices__items">
+                <div class="prices__items__box box1">
+                    <h3 class="box1__title">Basic plan</h3>
+                    <div class="box1__circle">
+                        <h4>85<sup>99</sup></h4>
+                        <p>pln/msc</p>
+                    </div>
+                    <div class="box1__textLineOdd">Zakup towaru + dowóz</div>
+                    <div class="box1__textLineEven">Serwis</div>
+                    <div class="box1__cta">Dołącz</div>
+                </div>
+                <div class="prices__items__box box2">
+                    <h3 class="box2__title">Standard plan</h3>
+                    <div class="box2__circle">
+                        <h4>95<sup>99</sup></h4>
+                        <p>pln/msc</p>
+                    </div>
+                    <div class="box2__textLineOdd">Zakup towaru + dowóz</div>
+                    <div class="box2__textLineEven">Serwis</div>
+                    <div class="box2__textLineOdd">Gwarancja 5 lat</div>
+                    <div class="box2__cta">Dołącz</div>
+                </div>
+                <div class="prices__items__box box1">
+                    <h3 class="box1__title">Advance plan</h3>
+                    <div class="box1__circle">
+                        <h4>211<sup>00</sup></h4>
+                        <p>pln/msc</p>
+                    </div>
+                    <div class="box1__textLineOdd">Zakup towaru + dowóz</div>
+                    <div class="box1__textLineEven">Serwis</div>
+                    <div class="box1__textLineOdd">Gwarancja 6 lat</div>
+                    <div class="box1__textLineEven">Porady projektanta</div>
+                    <div class="box1__cta">Dołącz</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container contact">
+        <div class="contact__title">KONTAKT</div>
+        <div class="contact__form">
+            <div class="contact__form__fields">
+                <form>
+                    <input type="text" placeholder="Imię">
+                    <input type="text" placeholder="Imię">
+                    <textarea rows="4" placeholder="Imię"></textarea>
+                </form>
+            </div>
+            <div class="contact__form__CTA">
+                <img src="/images/red_chair.png" alt="red chair">
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
