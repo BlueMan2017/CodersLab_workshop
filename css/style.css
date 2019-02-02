@@ -113,8 +113,8 @@ body {
 
 .titleArticle__image {
     position: relative;
-    top: 65px;
-    left: -45px;
+    top: 67px;
+    left: -81px;
 }
 
 .titleArticle__content {
@@ -543,40 +543,25 @@ textarea {
 }
 
 .checkBox__container input[type="checkbox"] {
-    position: absolute;
-    /* opacity: 0; */
-    height: 40px;
-    width: 40px;
+    display: none;
 }
 
-
-/* .checkmark {
+.checkBox__container input[type="checkbox"]~label {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    border: 1px solid #24ba9f;
-    border-radius: 1px;
-} */
-
-.checkmark::after {
-    display: none;
     content: "";
+    top: -5px;
+    border: 1px solid #24ba9f;
+    height: 50px;
+    width: 50px;
+}
+
+.checkBox__container input[type="checkbox"]:checked~label::after {
+    content: url(/images/form_ok.jpg);
+    height: 40px;
     position: absolute;
     top: 5px;
-    left: 5px;
-    height: 30px;
-    width: 30px;
-    background-image: url(/images/form_ok.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.checkBox__container input[type="checkbox"]:checked~.checkmark::after {
-    display: block;
+    left: -2px;
+    transform: scale(.9);
 }
 
 .checkBox__container .agreement {
@@ -586,4 +571,42 @@ textarea {
     font-size: 21px;
     letter-spacing: -0.8px;
     font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #6b6b6b;
+}
+
+.footerbar {
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 50px;
+}
+
+.footerbar__copy {
+    display: flex;
+    width: 60%;
+    padding: 15px 0;
+    color: #949494;
+    letter-spacing: 0.7px;
+}
+
+.footerbar__social {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-left: 57px;
+}
+
+.footerbar__logo {
+    display: flex;
+    align-items: center;
+    padding: 0px 9px 4px;
+    color: #969696;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.footerbar__logo>span {
+    padding: 0 5px;
 }
