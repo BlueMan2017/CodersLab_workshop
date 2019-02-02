@@ -475,6 +475,7 @@ body {
 }
 
 .contact__form__fields input[type=text],
+input[type=email],
 textarea {
     width: 100%;
     padding: 13px 13px 14px;
@@ -485,6 +486,11 @@ textarea {
     font-family: "Raleway", sans-serif;
     font-size: 32px;
     font-weight: 300;
+}
+
+.contact__form__fields textarea {
+    padding: 13px 13px 25px;
+    margin-bottom: 0;
     resize: none;
 }
 
@@ -496,5 +502,88 @@ textarea {
 }
 
 .contact__form__CTA {
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 40%;
+}
+
+.CTA__image {
+    position: absolute;
+    top: -28px;
+    overflow: hidden;
+}
+
+.checkBox {
+    position: absolute;
+    bottom: 5px;
+    left: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkBox__container {
+    position: relative;
+    width: 90%;
+}
+
+.checkBox__container input[type="submit"] {
+    height: 70px;
+    width: 100%;
+    background: #24ba9f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.checkBox__container input[type="checkbox"] {
+    position: absolute;
+    /* opacity: 0; */
+    height: 40px;
+    width: 40px;
+}
+
+
+/* .checkmark {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid #24ba9f;
+    border-radius: 1px;
+} */
+
+.checkmark::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    background-image: url(/images/form_ok.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checkBox__container input[type="checkbox"]:checked~.checkmark::after {
+    display: block;
+}
+
+.checkBox__container .agreement {
+    padding-left: 61px;
+    line-height: 21px;
+    margin-bottom: 21px;
+    font-size: 21px;
+    letter-spacing: -0.8px;
+    font-family: "Raleway", sans-serif;
 }
