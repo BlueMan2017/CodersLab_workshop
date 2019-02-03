@@ -57,6 +57,7 @@ body {
 }
 
 .navbar__item:first-child {
+    position: relative;
     margin-left: 0;
 }
 
@@ -66,6 +67,33 @@ body {
 
 .navbar__item:nth-child(3) {
     margin-left: 38px;
+}
+
+.navbar__open {
+    position: absolute;
+    z-index: 99;
+    top: 38px;
+    left: -18px;
+    background: #000000;
+    padding: 5px 20px 10px 14px;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.navbar__open::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 44px;
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    transform: rotate(45deg);
+}
+
+.navbar__open>li {
+    padding-top: 9px;
 }
 
 
@@ -269,7 +297,7 @@ body {
 .prices__items {
     display: flex;
     justify-content: space-between;
-    padding: 40px 10px 40px 0;
+    padding: 40px 12px 40px 0;
 }
 
 .prices__items__box {
@@ -286,12 +314,14 @@ body {
 
 /* Prices --> Box 1 */
 
-.box1 {
+.box1,
+.box3 {
     background: #ffffff;
     border: 2px solid #dbdbdb;
 }
 
-.box1::before {
+.box1::before,
+.box3::before {
     position: absolute;
     content: '';
     top: -38px;
@@ -305,7 +335,8 @@ body {
     box-shadow: 0px 0px 0px 2px rgba(219, 219, 219, 1);
 }
 
-.box1__title {
+.box1__title,
+.box3__title {
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
@@ -313,11 +344,12 @@ body {
     text-align: center;
 }
 
-.box1__circle {
+.box1__circle,
+.box3__circle {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 24px 0 34px;
+    margin: 24px 0 36px;
     justify-content: center;
     align-items: center;
     width: 130px;
@@ -329,18 +361,29 @@ body {
     color: #c1c1c1;
 }
 
-.box1__circle>h4>sup {
+.box1__circle>h4,
+.box3__circle>h4 {
+    position: relative;
+    font-size: 44px;
+    padding-right: 22px;
+}
+
+.box1__circle>h4>sup,
+.box3__circle>h4>sup {
+    position: absolute;
     font-size: 16px;
 }
 
-.box1__circle>p {
+.box1__circle>p,
+.box3__circle>p {
+    padding-top: 5px;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .box1__textLineOdd {
     width: 100%;
-    padding: 5px 0 8px;
+    padding: 5px 0 9px 5px;
     background: #e8e8e8;
     text-align: center;
     font-size: 24px;
@@ -358,10 +401,11 @@ body {
     font-weight: 300;
 }
 
-.box1__cta {
+.box1__cta,
+.box3__cta {
     position: absolute;
     bottom: 19px;
-    padding: 8px 29px;
+    padding: 8px 29px 7px;
     background: #24ba9f;
     border-radius: 10px;
     font-size: 16px;
@@ -400,7 +444,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 24px 0 34px;
+    margin: 24px 0 32px;
     justify-content: center;
     align-items: center;
     width: 130px;
@@ -412,18 +456,36 @@ body {
     color: #24ba9f;
 }
 
+.box2__circle>h4 {
+    position: relative;
+    font-size: 45px;
+    padding-right: 14px;
+}
+
 .box2__circle>h4>sup {
+    position: absolute;
     font-size: 16px;
 }
 
 .box2__circle>p {
+    padding-top: 3px;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .box2__textLineOdd {
     width: 100%;
-    padding: 8px 0 8px;
+    padding: 8px 0 10px 7px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    color: #949494;
+    font-weight: 300;
+}
+
+.box2__textLineOdd:nth-child(5) {
+    width: 100%;
+    padding: 10px 0 8px 1px;
     background: #ffffff;
     text-align: center;
     font-size: 24px;
@@ -433,7 +495,7 @@ body {
 
 .box2__textLineEven {
     width: 100%;
-    padding: 7px 0 10px;
+    padding: 8px 0 10px;
     background: #f1f1f1;
     text-align: center;
     font-size: 24px;
@@ -443,13 +505,56 @@ body {
 
 .box2__cta {
     position: absolute;
-    bottom: 19px;
-    padding: 8px 29px;
+    bottom: 16px;
+    padding: 8px 29px 7px;
     background: #ffffff;
     border-radius: 10px;
     font-size: 16px;
     color: #24ba9f;
     text-transform: uppercase;
+}
+
+
+/* Prices --> Box 3 */
+
+.box3__textLineOdd {
+    width: 100%;
+    padding: 5px 0 9px 5px;
+    background: #e8e8e8;
+    text-align: center;
+    font-size: 24px;
+    color: #949494;
+    font-weight: 300;
+}
+
+.box3__textLineOdd:nth-child(5) {
+    width: 100%;
+    padding: 5px 0 9px 12px;
+    background: #e8e8e8;
+    text-align: center;
+    font-size: 24px;
+    color: #949494;
+    font-weight: 300;
+}
+
+.box3__textLineEven {
+    width: 100%;
+    padding: 8px 0 10px;
+    background: #f1f1f1;
+    text-align: center;
+    font-size: 24px;
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+.box3__textLineEven:nth-child(6) {
+    width: 100%;
+    padding: 8px 0 9px 7px;
+    background: #f1f1f1;
+    text-align: center;
+    font-size: 24px;
+    color: #6b6b6b;
+    font-weight: 300;
 }
 
 
