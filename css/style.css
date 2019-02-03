@@ -84,6 +84,7 @@ body {
 }
 
 .title-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     height: 504px;
@@ -100,21 +101,29 @@ body {
 }
 
 .arrow {
+    position: absolute;
     color: #24ba9f;
     font-size: 78px;
     font-weight: 300;
-    padding: 10px 0 5px;
+}
+
+.arrowLeft {
+    left: 4px;
+}
+
+.arrowRight {
+    right: 13px;
 }
 
 .img-wrapper {
-    width: 450px;
+    width: 420px;
     overflow: hidden;
 }
 
 .titleArticle__image {
     position: relative;
-    top: 67px;
-    left: -81px;
+    top: 66px;
+    left: -42px;
 }
 
 .titleArticle__content {
@@ -124,8 +133,8 @@ body {
     align-items: center;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 50%;
-    padding: 0 5%;
+    flex-basis: 60%;
+    padding: 9px 150px 0 69px;
     text-align: center;
 }
 
@@ -133,7 +142,9 @@ body {
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0px 0 25px;
+    margin: 0 0 24px;
+    letter-spacing: -0.2px;
+    padding-right: 5px;
 }
 
 .logoBold {
@@ -143,14 +154,15 @@ body {
 
 .titleArticle__content p {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 21px;
-    margin: 5px 0;
+    letter-spacing: 0.5px;
+    margin: 6px 0 10px;
 }
 
 .titleArticle__button {
-    margin: 24px 0 0;
-    padding: 12px 34px;
+    margin: 22px 0 0;
+    padding: 14px 30px 11px 47px;
     background: #24ba9f;
     border: none;
     border-radius: 10px;
@@ -158,7 +170,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    font-size: 24px;
+    font-size: 23px;
     color: #ffffff;
     text-transform: uppercase;
 }
