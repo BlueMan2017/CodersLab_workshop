@@ -87,7 +87,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    height: 504px;
+    height: 503px;
 }
 
 .titleArticle {
@@ -528,7 +528,7 @@ textarea {
 
 .checkBox {
     position: absolute;
-    bottom: 5px;
+    bottom: 6px;
     left: 39px;
     display: flex;
     flex-direction: column;
@@ -587,10 +587,13 @@ textarea {
     color: #6b6b6b;
 }
 
+
+/* Footer */
+
 .footerbar {
     display: flex;
-    margin-top: 48px;
-    margin-bottom: 50px;
+    padding-top: 47px;
+    padding-bottom: 50px;
 }
 
 .footerbar__copy {
